@@ -8,7 +8,7 @@ JavaScript: The Definitive Guide it is the bible for JavaScript programmers—a 
 The Summary below is only for certain Javascript key concepts which can also assist you either for interview questions or when you need to find a quick reference while coding. 
 
 ## Chapter 6 - Objects
-What are Prototypes? 
+### Prototypes - What are Prototypes? 
 Every JavaScript object has a second JavaScript object. This second object is known as a prototype, and the first object inherits properties from the prototype. All objects created by object literals have the same prototype object, and we can refer to this prototype object in JavaScript code as Object.prototype. Object.prototype is one of the rare objects that has no prototype: it does not inherit any properties. All of the built-in constructors (and most user-defined constructors) have a prototype that inherits from Object.prototype. For example, Date.prototype inherits properties from Object.prototype, so a Date object created by new Date() inherits properties from both Date.prototype and Object.prototype. This linked series of prototype objects is known as a prototype chain. An explanation of how property inheritance works is in Inheritance (see section below).
 
 
