@@ -7,7 +7,30 @@ JavaScript: The Definitive Guide it is the bible for JavaScript programmers—a 
 
 The Summary below is only for certain Javascript key concepts which can also assist you either for interview questions or when you need to find a quick reference while coding. 
 
-## Chapter 6 - Objects
+## Chapter 6 - Understanding Objects
+
+### What is an Object in Javascript?
+Is a fundamental datatype, unordered collection of properties and composite values.
+An Object aggregates multiple values (primitive values or other objects) and allows you to store and retrieve those values by name.
+In addition to maintaining its own set of properties, a JavaScript object also inherits the properties of another object, known as its **“prototype”**. The methods of an object are typically inherited properties, and this **“prototypal inheritance”** is a key feature of JavaScript. The most common things to do with objects are **create**, **set**, **query**, **delete**, **test**, and **enumerate** their Properties.
+
+Great, so what is a [Property]? 
+ - A **Property** has a [name] and a [value].
+ - A property [name] may be any string, including the empty string, but no object may have two properties with the same name. 
+ - The [value] may be any JavaScript value, even a getter or a setter function (or both). 
+
+## What do I need to know about Objects in Javascript:
+ 1. **Mutable** - objects are mutable and are manipulated by reference rather than by value; If the variable x refers to an object, and the code var y = x; is executed, the variable y holds a reference to the same object, not a copy of that object. Any modifications made to the object through the variable y are also visible through the variable x.
+
+## Some commune Questions regarding Objects in Javascript
+### Is a Javascript Object Dynamic?
+Yes, JavaScript objects are dynamic—properties and can usually be added, deleted, used to simulate the static objects and “structs” of statically typed languages and they can represent sets of strings. 
+
+### So Everything in Javascript is an Object?
+Almost, everything is an Object except the primitive values: String, Number, True, False, Null, Undefined. 
+And even though strings, numbers, and booleans are not objects, they behave like immutable objects
+
+
 ### Prototypes - What are Prototypes? 
 Every JavaScript object has a second JavaScript object. This second object is known as a prototype, and the first object inherits properties from the prototype. A Prototype is simply a reference to another object. Almost all objects are given a non-null value for this property, at the time of their creation. 
 ```javascript
