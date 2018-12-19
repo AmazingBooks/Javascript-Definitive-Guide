@@ -14,11 +14,15 @@ Is a fundamental datatype, unordered collection of properties and composite valu
 An Object aggregates multiple values (primitive values or other objects) and allows you to store and retrieve those values by name.
 In addition to maintaining its own set of properties, a JavaScript object also inherits the properties of another object, known as its **“prototype”**. The methods of an object are typically inherited properties, and this **“prototypal inheritance”** is a key feature of JavaScript. The most common things to do with objects are **create**, **set**, **query**, **delete**, **test**, and **enumerate** their Properties.
 
-Great, so what is a [Property]? 
- - A **Property** has a [name] and a [value].
- - A property [name] may be any string, including the empty string, but no object may have two properties with the same name. 
- - The [value] may be any JavaScript value, even a getter or a setter function (or both). 
-
+Great, so what is a __Property__? 
+ - A **Property** has a __name__ and a __value__.
+ - A property __name__ may be any string, including the empty string, but no object may have two properties with the same name. 
+ - The __value__ may be any JavaScript value, even a getter or a setter function (or both). 
+ - Also each __Property__ has associated values called __Property Attributes__:
+     ✈ __The Writable Attribute__ specifies whether the value of the property can be set.
+     ✈ __The Enumerable Attribute__ specifies whether the property name is returned by a for/in loop.
+     ✈ __The Configurable Attribute__ specifies whether the property can be deleted and whether its attributes can be altered.
+     
 ## What do I need to know about Objects in Javascript:
  1. **Mutable** - objects are mutable and are manipulated by reference rather than by value; If the variable x refers to an object, and the code var y = x; is executed, the variable y holds a reference to the same object, not a copy of that object. Any modifications made to the object through the variable y are also visible through the variable x.
 
