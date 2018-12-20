@@ -39,8 +39,10 @@ Great, so what is a __Property__?
    
    - **Inherited Property** - a property defined by an Object’s prototype object.
  3.  **Multiple ways to instantiate an Object**: 
-    - There are a couple of ways to create, or instantiate, objects. The first is to use the **new operator with a constructor**. (A constructor is simply a function that uses new to create an object—any function can be a constructor.) 
-    ``` 
+   
+   - There are a couple of ways to create, or instantiate, objects. The first is to use the **new operator with a constructor**. (A constructor is simply a function that uses new to create an object—any function can be a constructor.) 
+   
+  ```javascript
     //this code instantiates a generic object and stores a reference to it in object:
     var object = new Object();
     ````
