@@ -22,10 +22,22 @@ Great, so what is a __Property__?
       - __The Writable Attribute__ specifies whether the value of the property can be set.
       - __The Enumerable Attribute__ specifies whether the property name is returned by a for/in loop.
       - __The Configurable Attribute__ specifies whether the property can be deleted and whether its attributes can be altered.
-     
+
 ## What do I need to know about Objects in Javascript:
  1. **Mutable** - objects are mutable and are manipulated by reference rather than by value; If the variable x refers to an object, and the code var y = x; is executed, the variable y holds a reference to the same object, not a copy of that object. Any modifications made to the object through the variable y are also visible through the variable x.
-
+ 2. **In Javascript there are 3 board Categories of Objects and 2 types of properties**:
+ 
+### Those 3 Categories of Objects are:
+   - **Native Object** - object or class of objects defined by the ECMAScript specification like Arrays, Functions, Dates, and regular expressions (for example) are native objects.
+   
+   - **Host Object** - Object defined by the host environment (such as a web browser) within which the JavaScript interpreter is embedded. *The HTMLElement objects that represent the structure of a web page in client-side JavaScript are host objects*.
+   
+   - **User-defined Object** - any object created by the execution of JavaScript code.
+    
+### Those 2 Categories of Properties are:
+   - **Own Property** - a property defined directly on an Object.
+   - **Inherited Property** - a property defined by an Object’s prototype object.
+   
 ## Some commune Questions regarding Objects in Javascript
 ### Is a Javascript Object Dynamic?
 Yes, JavaScript objects are dynamic—properties and can usually be added, deleted, used to simulate the static objects and “structs” of statically typed languages and they can represent sets of strings. 
